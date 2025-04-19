@@ -3,7 +3,7 @@ import axios from 'axios';
 const getMovie = async (type, query, page = 1) => {
     const options = {
         headers: {
-            accept: 'application.json',
+            accept: 'application/json',
             Authorization: `Bearer ${import.meta.env.VITE_THE_MOVIE_DB_API_KEY}`,
         },
     };
